@@ -1,0 +1,28 @@
+# Ignore Google Cloud credentials
+credentials/
+*.json
+
+# .gitignore
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.log
+*.exe
+*.pyc
+__pycache__/
+.env
+.env.*
+*.json
+docker-airflow/logs/
+
+# Ignore terraform directories and files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.log
+
+microservices_data ingestion/amazon_review.csv
+
+

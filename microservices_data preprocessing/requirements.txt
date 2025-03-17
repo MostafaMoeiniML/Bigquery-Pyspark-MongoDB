@@ -1,0 +1,4 @@
+google-cloud-bigquery
+pyspark
+pandas
+pymongo
