@@ -1,10 +1,10 @@
 # BigQuery-PySpark-MongoDB Data Engineering Project
 
-This repository contains a data engineering project that involves the use of Docker, Apache Airflow, PySpark, BigQuery, and MongoDB. The project is designed for building a robust data pipeline that processes and loads data into BigQuery and MongoDB.
+This repository contains a data engineering project that involves the use of Docker, Apache Airflow, Terraform, PySpark, BigQuery, and MongoDB. The project is designed for building a robust data pipeline with two microservices and ingest big amazon_review dataset from local host and save it into BigQuery and processes dataset with pyspark and loads data into MongoDB for using sentiment analysis ML app.
 
 ## Project Overview
 
-The project includes several microservices and components to handle data ingestion, preprocessing, and processing. This includes:
+The project includes two microservices and components to handle data ingestion, preprocessing, and processing. This includes:
 
 - **Docker Compose setup** for containerized services.
 - **Apache Airflow DAGs** for managing workflows.
