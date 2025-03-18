@@ -14,15 +14,13 @@ The project includes two microservices and components to handle data ingestion, 
 ## Credentials File
 
 ### Location: `credentials/`
-The project requires access to Google Cloud services, including BigQuery, and MongoDB. The credentials file contains sensitive information such as service account keys for Google Cloud. This file is ignored in the repository using `.gitignore` to prevent accidental commits of sensitive data.
+The project requires access to Google Cloud services for BigQuery. The credentials file contains sensitive information such as service account keys for Google Cloud. This file is ignored in the repository using `.gitignore` to prevent accidental commits of sensitive data.
 
 ### How to Use:
+1. Firstly we should download this file **Google Cloud Service Account** (big-test-449715-2b0e9010365e.json) from   (https://drive.google.com/drive/u/4/folders/16qyKNRDmMrKSCbH7vv9_51Ajmy5Byf_A)  google drive address and paste into these folders: microservices_data ingestion, microservices_data preprocessing, terraform .
+2. Secondly we should download the dataset from (https://drive.google.com/drive/u/4/folders/16qyKNRDmMrKSCbH7vv9_51Ajmy5Byf_A) and then paste into microservices_data ingestion folder.
+3. And then run the docker desktop and build a docker-copmose and up it with the following command:
+    - docker compose build
+    - docker-compose up
+4- And then you can see all logs 
 
-1. Ensure you have a **Google Cloud Service Account** with the appropriate permissions to access BigQuery.
-2. Download the **Service Account Key JSON file** from the Google Cloud Console.
-3. Place the **Service Account Key JSON file** in the `credentials/` directory.
-4. Set the environment variable `GOOGLE_APPLICATION_CREDENTIALS` to the path of this credentials file.
-
-For example:
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials-file.json"
