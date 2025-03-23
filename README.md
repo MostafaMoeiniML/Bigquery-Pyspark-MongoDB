@@ -22,8 +22,8 @@ The project requires access to Google Cloud services for BigQuery. The credentia
 3. And you should create two images from Ingestion DockerFile and Preprocessing DockerFile with the following commands , just don't forget firstly go to the path of each microservices and then run these command on the right path:
    a. docker build -t ingestion-microservice     # run this command in the path of microservices_data ingestion
    b. docker build -t preprocess_micro           # run this command in the path of microservices_data preprocessing
-5. And then run the docker desktop and build a docker-copmose and up it with the following command:
+4. And then run the docker desktop and build a docker-copmose and up it with the following command:
     - docker compose build                       # run this command in the path of Bigquery-Pyspark-MongoDB
     - docker-compose up
-4- And then you can see all logs that shows ingest data from local server and save it into BigQuery and then with another microservices get a part of dataset into Pyspark and preprocess it and then save the cleaned-data into MongoDB.
+5. And then you can see all logs that shows ingest data from local server and save it into BigQuery and then with another microservices get a part of dataset into Pyspark and preprocess it and then save the cleaned-data into MongoDB.
 
