@@ -2,7 +2,7 @@
 provider "google" {
   project     = "big-test-449715"
   region      = "us-central1"
-  credentials = file("big-test-449715-2b0e9010365e.json")  # Replace with your actual key filename
+  credentials = file("big-test-449715-2b0e9010365e.json")  # BigQuery key filename
 }
 
 # Create BigQuery Dataset
