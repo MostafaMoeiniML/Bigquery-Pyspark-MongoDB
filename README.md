@@ -20,8 +20,9 @@ The project requires access to Google Cloud services for BigQuery. The credentia
 ## 1- Firstly you should download this file **Google Cloud Service Account** (big-test-449715-2b0e9010365e.json) from   (https://drive.google.com/drive/u/4/folders/16qyKNRDmMrKSCbH7vv9_51Ajmy5Byf_A)  google drive address and paste into these folders: microservices_data ingestion, microservices_data preprocessing, terraform .
 ## 2- Secondly you should download the dataset from (https://drive.google.com/drive/u/4/folders/16qyKNRDmMrKSCbH7vv9_51Ajmy5Byf_A) and then paste into microservices_data ingestion folder.
 ## 3- And you should create two images from Ingestion DockerFile and Preprocessing DockerFile with the following commands , just don't forget firstly go to the path of each microservices and then run these command on the right path:
-   #3.1- docker build -t ingestion-microservice     ..........run this command in the path of microservices_data ingestion
-   #3.2- docker build -t preprocess_micro           ..........run this command in the path of microservices_data preprocessing
+
+    # 3.1- docker build -t ingestion-microservice .                        run this command in the path of Ingestion folder
+    # 3.2- docker build -t preprocess_micro .                              run this command in the path of preprocessing folder 
 ## 4- And then run the docker desktop and build a docker-copmose and up it with the following command:
     # 4.1- docker compose build                       ......... run this command in the path of Bigquery-Pyspark-MongoDB
     # 4.2- docker-compose up
